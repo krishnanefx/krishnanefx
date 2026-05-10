@@ -70,7 +70,9 @@ That sounds abstract until you look at what it actually requires, building tools
 #### Habits
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/github-metrics.svg" alt="Metrics" />
+  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-summary-card-output/github_dark/0-profile-details.svg" width="100%" />
+  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-summary-card-output/github_dark/3-stats.svg" width="49%" />
+  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-summary-card-output/github_dark/4-productive-time.svg" width="49%" />
 </div>
 
 ---
