@@ -19,6 +19,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: >
+            {
+              "theme": "gitblock",
+              "angle": -30
+            }
       - name: Commit & Push
         run: |
           git config user.email "action@github.com"
