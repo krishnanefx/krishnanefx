@@ -63,7 +63,7 @@ jobs:
           for i, x in enumerate(unique_xs):
               hue = int(((x - x_min) / (x_max - x_min)) * 300)
               faces = {
-                  'top':   (f'hsl({hue},90%,62%)',  f'hsl({hue},90%,15%)'),
+                  'top':   (f'hsl({hue},90%,62%)',  f'hsl({hue},60%,85%)'),  # light studs on top
                   'left':  (f'hsl({hue},80%,40%)',  f'hsl({hue},80%,10%)'),
                   'right': (f'hsl({hue},75%,30%)',  f'hsl({hue},75%,8%)'),
               }
@@ -96,6 +96,15 @@ jobs:
           for t in root.iter(f'{{{NS}}}text'):
               f = t.attrib.get('fill', '')
               t.attrib['fill'] = '#8b949e' if f in ('gray','grey') else '#e6edf3'
+
+          # Star → yellow, fork → green (both are paths with fill=#00000f)
+          defs_ids = set(id(e) for e in defs.iter())
+          for p in root.iter(f'{{{NS}}}path'):
+              if id(p) in defs_ids: continue
+              if p.attrib.get('fill','') != '#00000f': continue
+              d = p.attrib.get('d','')
+              if d.startswith('M8'):   p.attrib['fill'] = '#ffd700'  # star → gold
+              elif d.startswith('M5'): p.attrib['fill'] = '#3fb950'  # fork → green
 
           # Dark background
           for child in root:
