@@ -3,16 +3,8 @@
 # Krishnan Adaikkappan
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=800&color=4F8EF7&center=true&vCenter=true&width=600&lines=Building+at+the+intersection+of+AI+and+the+public+good.;MEng+Robotics+%26+AI+%C2%B7+UCL.;London+%E2%86%92+Singapore." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=800&color=4F8EF7&center=true&vCenter=true&width=600&lines=AI+for+public+good.;MEng+Robotics+%26+AI+%C2%B7+UCL.;London+%E2%86%92+Singapore." alt="Typing SVG" />
 </a>
-
-<br>
-
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--3962--2080-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-3962-2080)
-[![Next: GovTech](https://img.shields.io/badge/Next-GovTech_Singapore-d62828?style=flat-square)](https://www.tech.gov.sg/)
-[![Claude Ambassador](https://img.shields.io/badge/Claude-Ambassador-CC785C?style=flat-square)](https://www.anthropic.com/)
-[![OpenAI Codex Ambassador](https://img.shields.io/badge/OpenAI_Codex-Ambassador-10a37f?style=flat-square)](https://openai.com/)
-
 </div>
 
 ---
@@ -21,10 +13,7 @@
 
 I care about two things: **AI deployed for public good**, and **the ethics of how we deploy it**.
 
-That sounds abstract until you look at what it actually requires — building tools that reach the people who need them, designing systems that don't quietly fail the most vulnerable users, and being honest about what AI can and can't responsibly do. That's the work I'm trying to learn how to do well.
-
-Headed to **GovTech Singapore** to work on AI governance and digital public services. Before that, **Stanford Summer Session 2026** — international relations, political science, management science, oral comms. Studying the soft stack as seriously as the technical one.
-
+That sounds abstract until you look at what it actually requires, building tools that reach the people who need them, designing systems that don't quietly fail the most vulnerable users, and being honest about what AI can and can't responsibly do. That's the work I'm trying to learn how to do well.
 ---
 
 ### Currently
@@ -59,8 +48,6 @@ Headed to **GovTech Singapore** to work on AI governance and digital public serv
 #### ⚡ AI tooling
 [**PriceSniper**](https://github.com/krishnanefx/PriceSniper) — London AI Hack 2025. An AI bid co-pilot for UK contractors that turns a job description into a priced, ready-to-send proposal.
 
-**FilmLab** — Browser-based photo editor inspired by Dehancer. React + WebGL 2.0, 12-stage shader pipeline, 15 film presets.
-
 ---
 
 ### Receipts
@@ -90,20 +77,12 @@ Headed to **GovTech Singapore** to work on AI governance and digital public serv
 
 ### Stack
 
-Python · TypeScript · React · C++ · LaTeX  
-Claude Code · MCP · OpenAI APIs · WebGL · Vite
-
----
-
-### Elsewhere
-
-Previously at the Ministry of Digital Development and Information · A*STAR  
-Hackathons: London AI Hack · Lenovo × NVIDIA · others I've lost count of
+Python · TypeScript · React · C++ · LaTeX · Vite
 
 ---
 
 <div align="center">
 
-*If you're working on AI for public services, civic tech, or anything where the stakes are higher than user retention — I'd love to talk.*
+*If you're working on AI for public services, civic tech, or anything — I'd love to talk.*
 
 </div>
