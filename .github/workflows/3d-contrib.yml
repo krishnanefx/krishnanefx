@@ -26,45 +26,81 @@ jobs:
         run: |
           python3 << 'PYEOF'
           import xml.etree.ElementTree as ET, re
+
           ET.register_namespace('', 'http://www.w3.org/2000/svg')
           ET.register_namespace('xlink', 'http://www.w3.org/1999/xlink')
+
           tree = ET.parse('profile-3d-contrib/profile-gitblock.svg')
           root = tree.getroot()
           NS = 'http://www.w3.org/2000/svg'
+          defs = root.find(f'{{{NS}}}defs')
+
+          # Stud path data from existing pattern_1_*
+          stud_d = {}
+          for face in ('top', 'left', 'right'):
+              p = defs.find(f'.//{{{NS}}}pattern[@id="pattern_1_{face}"]')
+              stud_d[face] = p.find(f'{{{NS}}}path').attrib['d']
+
+          pat_size = {'x':'0','y':'0','width':'32','height':'16','patternUnits':'userSpaceOnUse'}
+          rect_size = {'x':'0','y':'0','width':'32','height':'16'}
+
+          # Find contribution blocks and unique X positions
+          groups = [g for g in root.iter(f'{{{NS}}}g') if 'transform' in g.attrib]
+          contrib_groups = []
+          for g in groups:
+              fills = [c.attrib.get('fill','') for c in g]
+              if any('pattern_' in f and 'pattern_0' not in f for f in fills):
+                  m = re.search(r'translate\((\d+(?:\.\d+)?)\s', g.attrib['transform'])
+                  if m:
+                      contrib_groups.append((float(m.group(1)), g))
+
+          xs = [x for x, _ in contrib_groups]
+          x_min, x_max = min(xs), max(xs)
+          unique_xs = sorted(set(xs))
+          x_to_col = {x: i for i, x in enumerate(unique_xs)}
+
+          # Create per-column rainbow patterns with studs
+          for i, x in enumerate(unique_xs):
+              hue = int(((x - x_min) / (x_max - x_min)) * 300)
+              faces = {
+                  'top':   (f'hsl({hue},90%,62%)',  f'hsl({hue},90%,15%)'),
+                  'left':  (f'hsl({hue},80%,40%)',  f'hsl({hue},80%,10%)'),
+                  'right': (f'hsl({hue},75%,30%)',  f'hsl({hue},75%,8%)'),
+              }
+              for face, (base_col, stud_col) in faces.items():
+                  pid = f'pattern_col_{i}_{face}'
+                  p_el = ET.SubElement(defs, f'{{{NS}}}pattern', {'id': pid, **pat_size})
+                  ET.SubElement(p_el, f'{{{NS}}}rect', {**rect_size, 'fill': base_col})
+                  ET.SubElement(p_el, f'{{{NS}}}path', {'stroke':'none','fill':stud_col,'d':stud_d[face]})
+
+          # Rewire contribution blocks to per-column patterns
+          for x, g in contrib_groups:
+              col_i = x_to_col[x]
+              for child in g:
+                  f = child.attrib.get('fill', '')
+                  if not f.startswith('url(#pattern'): continue
+                  if   '_top'   in f: child.attrib['fill'] = f'url(#pattern_col_{col_i}_top)'
+                  elif '_left'  in f: child.attrib['fill'] = f'url(#pattern_col_{col_i}_left)'
+                  elif '_right' in f: child.attrib['fill'] = f'url(#pattern_col_{col_i}_right)'
 
           # Darken empty-block patterns for dark mode
           dark = {'pattern_0_top':'#161b22','pattern_0_left':'#1c2128','pattern_0_right':'#21262d'}
           bump = {'pattern_0_top':'#21262d','pattern_0_left':'#2d333b','pattern_0_right':'#30363d'}
-          defs = root.find(f'{{{NS}}}defs')
           for p in defs.iter(f'{{{NS}}}pattern'):
-              pid = p.attrib.get('id','')
+              pid = p.attrib.get('id', '')
               if pid not in dark: continue
-              for r in p.iter(f'{{{NS}}}rect'):   r.attrib['fill'] = dark[pid]
+              for r in p.iter(f'{{{NS}}}rect'):    r.attrib['fill'] = dark[pid]
               for path in p.iter(f'{{{NS}}}path'): path.attrib['fill'] = bump[pid]
 
-          # Rainbow colours on contribution blocks by X position
-          groups = [g for g in root.iter(f'{{{NS}}}g') if 'transform' in g.attrib]
-          xs = [float(re.search(r'translate\((\d+(?:\.\d+)?)\s',g.attrib['transform']).group(1))
-                for g in groups if re.search(r'translate\((\d+(?:\.\d+)?)\s',g.attrib['transform'])]
-          x_min,x_max = min(xs),max(xs)
-          for g in groups:
-              m = re.search(r'translate\((\d+(?:\.\d+)?)\s',g.attrib['transform'])
-              if not m: continue
-              x = float(m.group(1))
-              fills = [c.attrib.get('fill','') for c in g]
-              if not any('pattern_' in f and 'pattern_0' not in f for f in fills): continue
-              hue = int(((x-x_min)/(x_max-x_min))*300)
-              for child in g:
-                  f = child.attrib.get('fill','')
-                  if not f.startswith('url(#pattern'): continue
-                  if   '_top'  in f: child.attrib['fill']=f'hsl({hue},90%,65%)'
-                  elif '_left' in f: child.attrib['fill']=f'hsl({hue},80%,42%)'
-                  elif '_right'in f: child.attrib['fill']=f'hsl({hue},75%,32%)'
+          # White text
+          for t in root.iter(f'{{{NS}}}text'):
+              f = t.attrib.get('fill', '')
+              t.attrib['fill'] = '#8b949e' if f in ('gray','grey') else '#e6edf3'
 
-          # Ensure dark background
+          # Dark background
           for child in root:
-              if child.tag.split('}')[-1]=='rect' and child.attrib.get('width')=='1280':
-                  child.attrib['fill']='#0D1117'
+              if child.tag.split('}')[-1] == 'rect' and child.attrib.get('width') == '1280':
+                  child.attrib['fill'] = '#0D1117'
 
           tree.write('profile-3d-contrib/profile-gitblock-rainbow.svg')
           PYEOF
