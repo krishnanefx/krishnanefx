@@ -16,12 +16,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Write settings
-        run: echo '{"theme":"gitblock","angle":-30}' > /tmp/settings.json
+        run: echo '{"angle":-30}' > /tmp/settings.json
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: /tmp/settings.json
+      - name: Dark background
+        run: |
+          for f in profile-3d-contrib/profile-gitblock-rainbow.svg profile-3d-contrib/profile-gitblock.svg; do
+            [ -f "$f" ] && sed -i \
+              -e 's/fill="white"/fill="#0D1117"/g' \
+              -e 's/fill="#ffffff"/fill="#0D1117"/g' \
+              -e 's/fill="#FFFFFF"/fill="#0D1117"/g' \
+              "$f" || true
+          done
       - name: Commit & Push
         run: |
           git config user.email "action@github.com"
