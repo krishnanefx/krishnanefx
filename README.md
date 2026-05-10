@@ -49,17 +49,6 @@ I care about two things: **AI deployed for public good**, and **the ethics of ho
 
 ---
 
-### Receipts
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=krishnanefx&show_icons=true&hide_border=true&bg_color=0D1117&title_color=4F8EF7&text_color=c9d1d9&icon_color=4F8EF7&include_all_commits=true&count_private=true">
-  <img src="https://github-readme-stats.vercel.app/api?username=krishnanefx&show_icons=true&hide_border=true&title_color=4F8EF7&include_all_commits=true&count_private=true" width="48%" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=krishnanefx&layout=compact&hide_border=true&bg_color=0D1117&title_color=4F8EF7&text_color=c9d1d9&langs_count=8">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=krishnanefx&layout=compact&hide_border=true&title_color=4F8EF7&langs_count=8" width="48%" />
-</picture>
-
 #### Activity, in 3D
 
 <div align="center">
