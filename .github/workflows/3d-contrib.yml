@@ -22,6 +22,53 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: /tmp/settings.json
+      - name: Rainbow post-process
+        run: |
+          python3 << 'PYEOF'
+          import xml.etree.ElementTree as ET, re
+          ET.register_namespace('', 'http://www.w3.org/2000/svg')
+          ET.register_namespace('xlink', 'http://www.w3.org/1999/xlink')
+          tree = ET.parse('profile-3d-contrib/profile-gitblock.svg')
+          root = tree.getroot()
+          NS = 'http://www.w3.org/2000/svg'
+
+          # Darken empty-block patterns for dark mode
+          dark = {'pattern_0_top':'#161b22','pattern_0_left':'#1c2128','pattern_0_right':'#21262d'}
+          bump = {'pattern_0_top':'#21262d','pattern_0_left':'#2d333b','pattern_0_right':'#30363d'}
+          defs = root.find(f'{{{NS}}}defs')
+          for p in defs.iter(f'{{{NS}}}pattern'):
+              pid = p.attrib.get('id','')
+              if pid not in dark: continue
+              for r in p.iter(f'{{{NS}}}rect'):   r.attrib['fill'] = dark[pid]
+              for path in p.iter(f'{{{NS}}}path'): path.attrib['fill'] = bump[pid]
+
+          # Rainbow colours on contribution blocks by X position
+          groups = [g for g in root.iter(f'{{{NS}}}g') if 'transform' in g.attrib]
+          xs = [float(re.search(r'translate\((\d+(?:\.\d+)?)\s',g.attrib['transform']).group(1))
+                for g in groups if re.search(r'translate\((\d+(?:\.\d+)?)\s',g.attrib['transform'])]
+          x_min,x_max = min(xs),max(xs)
+          for g in groups:
+              m = re.search(r'translate\((\d+(?:\.\d+)?)\s',g.attrib['transform'])
+              if not m: continue
+              x = float(m.group(1))
+              fills = [c.attrib.get('fill','') for c in g]
+              if not any('pattern_' in f and 'pattern_0' not in f for f in fills): continue
+              hue = int(((x-x_min)/(x_max-x_min))*300)
+              for child in g:
+                  f = child.attrib.get('fill','')
+                  if not f.startswith('url(#pattern'): continue
+                  if   '_top'  in f: child.attrib['fill']=f'hsl({hue},90%,65%)'
+                  elif '_left' in f: child.attrib['fill']=f'hsl({hue},80%,42%)'
+                  elif '_right'in f: child.attrib['fill']=f'hsl({hue},75%,32%)'
+
+          # Ensure dark background
+          for child in root:
+              if child.tag.split('}')[-1]=='rect' and child.attrib.get('width')=='1280':
+                  child.attrib['fill']='#0D1117'
+
+          tree.write('profile-3d-contrib/profile-gitblock-rainbow.svg')
+          PYEOF
+
       - name: Commit & Push
         run: |
           git config user.email "action@github.com"

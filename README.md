@@ -50,7 +50,7 @@ I care about two things: **AI deployed for public good**, and **the ethics of ho
 #### Activity, in 3D
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" />
+  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-3d-contrib/profile-gitblock-rainbow.svg" alt="3D contribution graph" />
 </div>
 
 #### Habits
