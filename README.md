@@ -13,7 +13,6 @@
 
 I care about two things: **AI deployed for public good**, and **the ethics of how we deploy it**.
 
-That sounds abstract until you look at what it actually requires, building tools that reach the people who need them, designing systems that don't quietly fail the most vulnerable users, and being honest about what AI can and can't responsibly do. That's the work I'm trying to learn how to do well.
 ---
 
 ### Currently
