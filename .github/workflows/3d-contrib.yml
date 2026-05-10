@@ -63,7 +63,7 @@ jobs:
           for i, x in enumerate(unique_xs):
               hue = int(((x - x_min) / (x_max - x_min)) * 300)
               faces = {
-                  'top':   (f'hsl({hue},90%,62%)',  f'hsl({hue},60%,85%)'),  # light studs on top
+                  'top':   (f'hsl({hue},90%,62%)',  f'hsl({hue},90%,12%)'),  # dark studs on top
                   'left':  (f'hsl({hue},80%,40%)',  f'hsl({hue},80%,10%)'),
                   'right': (f'hsl({hue},75%,30%)',  f'hsl({hue},75%,8%)'),
               }
