@@ -69,9 +69,10 @@ I care about two things: **AI deployed for public good**, and **the ethics of ho
 #### Habits
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-summary-card-output/github_dark/0-profile-details.svg" width="100%" />
-  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-summary-card-output/github_dark/3-stats.svg" width="49%" />
-  <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-summary-card-output/github_dark/4-productive-time.svg" width="49%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=krishnanefx&theme=dark&hide_border=true&background=0D1117&ring=4F8EF7&fire=4F8EF7&currStreakLabel=4F8EF7">
+    <img src="https://streak-stats.demolab.com?user=krishnanefx&theme=default&hide_border=true&ring=4F8EF7&fire=4F8EF7&currStreakLabel=4F8EF7" />
+  </picture>
 </div>
 
 ---

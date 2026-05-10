@@ -1,22 +1,10 @@
 name: Metrics
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   workflow_dispatch:
-  push:
-    branches: ["main"]
 
 jobs:
-  github-metrics:
+  placeholder:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
-        with:
-          USERNAME: krishnanefx
-          BRANCH_NAME: main
+      - run: echo "Metrics rendered via streak-stats.demolab.com — no workflow needed."
