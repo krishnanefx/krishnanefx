@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Krishnan+adaikkappan&fontAlign=57&fontAlignY=40&color=gradient" alt="Krishnan Adaikkappan" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=Krishnan+Adaikkappan&fontAlign=57&fontAlignY=40&color=gradient" alt="Krishnan Adaikkappan" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=800&color=4F8EF7&center=true&vCenter=true&width=600&lines=AI+for+public+good.;MEng+Robotics+%26+AI+%C2%B7+UCL;London+-+Singapore" alt="Typing SVG" />
