@@ -6,9 +6,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=800&color=4F8EF7&center=true&vCenter=true&width=600&lines=AI+for+public+good.;MEng+Robotics+%26+AI+%C2%B7+UCL.;London+%E2%86%92+Singapore." alt="Typing SVG" />
 </a>
 </div>
-
----
-
 ### About
 
 I care about two things: **AI deployed for public good**, and **the ethics of how we deploy it**.
