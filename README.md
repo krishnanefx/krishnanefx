@@ -17,7 +17,7 @@ I care about two things: **AI deployed for public good**, and **the ethics of ho
 
 ### Currently
 
-```
+
 🏗   building   →  Project OneMigrant — a community partner directory
                   for migrant workers in Singapore, with Sojourn Care Centre
 
@@ -26,7 +26,7 @@ I care about two things: **AI deployed for public good**, and **the ethics of ho
 🧪   tinkering  →  multi-agent scrapers, retrieval pipelines, weird LLM workflows
 
 🌍   based in   →  London, mostly. Singapore, soon.
-```
+
 
 ---
 
