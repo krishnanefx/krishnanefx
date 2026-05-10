@@ -30,7 +30,7 @@ I care about two things: **AI deployed for public good**, and **the ethics of ho
 
 ### Selected work
 
-> Most of what I build falls into one of three buckets: **civic tech**, **information legibility**, or **AI tooling for individual leverage**.
+Most of what I build falls into one of three buckets: **civic tech**, **information legibility**, or **AI tooling for individual leverage**.
 
 #### 🤝 Civic tech
 **Project OneMigrant** — Web lead. A youth-led platform reframed as a community partner directory and noticeboard for migrant workers in Singapore. Built with The Salvation Army's Sojourn Care Centre.
