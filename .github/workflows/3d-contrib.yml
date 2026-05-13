@@ -26,6 +26,7 @@ jobs:
         run: |
           python3 << 'PYEOF'
           import xml.etree.ElementTree as ET, re
+          from datetime import date
 
           ET.register_namespace('', 'http://www.w3.org/2000/svg')
           ET.register_namespace('xlink', 'http://www.w3.org/1999/xlink')
@@ -110,6 +111,12 @@ jobs:
           for child in root:
               if child.tag.split('}')[-1] == 'rect' and child.attrib.get('width') == '1280':
                   child.attrib['fill'] = '#0D1117'
+
+          # Update end date to today so git always sees a change and commits daily
+          today = date.today().isoformat()
+          for t in root.iter(f'{{{NS}}}text'):
+              if t.text and re.match(r'\d{4}-\d{2}-\d{2} / \d{4}-\d{2}-\d{2}', t.text):
+                  t.text = re.sub(r'/ \d{4}-\d{2}-\d{2}$', f'/ {today}', t.text)
 
           tree.write('profile-3d-contrib/profile-gitblock-rainbow.svg')
           PYEOF
