@@ -19,7 +19,7 @@ jobs:
         run: echo '{"angle":-30}' > /tmp/settings.json
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CONTRIB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: /tmp/settings.json
       - name: Rainbow post-process
