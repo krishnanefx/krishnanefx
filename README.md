@@ -21,7 +21,7 @@ I care about two things: **AI deployed for public good**, and **the ethics of ho
 
 🧪   tinkering  →  multi-agent scrapers, retrieval pipelines, weird LLM workflows
 
-🌍   based in   →  London, mostly. Singapore, soon.
+🌍   based in   →  London & Singapore
 
 ---
 
