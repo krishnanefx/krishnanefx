@@ -14,23 +14,13 @@ Part of a family I built for my own vault, all in the directory: [Tahoe Code](ht
 
 ### Lector · a speed reader that respects punctuation
 
-**Released** on the [App Store](https://apps.apple.com/us/app/lector-read-faster/id6807418777?ppid=ef511a4f-0ad6-4e6f-9b32-dc3e99dcce46) · free · iPhone, iOS 17+ · built and owned by me
+**Released** on the [App Store](https://apps.apple.com/us/app/lector-read-faster/id6807418777?ppid=ef511a4f-0ad6-4e6f-9b32-dc3e99dcce46) · free · iPhone, iOS 17+ · built by me
 
 <a href="https://apps.apple.com/us/app/lector-read-faster/id6807418777?ppid=ef511a4f-0ad6-4e6f-9b32-dc3e99dcce46"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/9b/72/429b72fd-3fa4-ee01-2433-cba2cf46b7ab/01-punctuation.png/320x480bb.jpg" alt="Lector on iPhone" width="240" /></a>
 
 - **Problem:** speed readers flash every word for the same time, so a full stop goes by as fast as "the" and sentences fall apart.
 - **What I built:** a reader that holds each word longer at the end of a sentence (1.8×) or a clause (1.4×), on a timer that corrects its own drift and never skips a word. Your books stay on your phone.
 - **Evidence:** version 1.0.2 on the App Store since September 2026. [Privacy and support](https://github.com/krishnanefx/lector-support).
-
-### Don't Touch Me · a robot that runs away from you
-
-**Coursework** (UCL COMP0209) · team of three, with [@wippy06](https://github.com/wippy06) and [@yaariek](https://github.com/yaariek)
-
-<a href="https://youtu.be/9Sp8UCt-aAA"><img src="https://img.youtube.com/vi/9Sp8UCt-aAA/hqdefault.jpg" alt="Video: the Don't Touch Me robot" width="480" /></a>
-
-- **Problem:** build an Arduino robot with a personality.
-- **What it does:** it learns the room's background noise, then waits. A loud sound makes it spin round looking for whoever made it, and if someone is within 30 cm it backs away screaming. Picking it up or shaking it sends it straight into flight. [How it works](https://github.com/krishnanefx/Dont_touch_me).
-- **My part:** lead programmer.
 
 <details>
 <summary><b>More projects</b></summary>
