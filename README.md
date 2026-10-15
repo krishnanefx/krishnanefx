@@ -9,21 +9,7 @@
 
 ### About
 
-I care about two things: **AI deployed for public good**, and **the ethics of how we deploy it**.
-
----
-### Currently
-
-🏗   building   →  Project OneMigrant — a community partner directory
-                  for migrant workers in Singapore, with Sojourn Care Centre
-
-📚   reading    →  state capacity, digital government, AI policy
-
-🧪   tinkering  →  multi-agent scrapers, retrieval pipelines, weird LLM workflows
-
-🌍   based in   →  London & Singapore
-
----
+Explore everything!
 
 #### Activity, in 3D
 
@@ -38,10 +24,4 @@ I care about two things: **AI deployed for public good**, and **the ethics of ho
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=krishnanefx&theme=dark&hide_border=true&background=0D1117&ring=4F8EF7&fire=4F8EF7&currStreakLabel=4F8EF7">
     <img src="https://streak-stats.demolab.com?user=krishnanefx&theme=default&hide_border=true&ring=4F8EF7&fire=4F8EF7&currStreakLabel=4F8EF7" />
   </picture>
-</div>
-
-<div align="center">
-
-*If you're working on AI for public services, civic tech, or anything — I'd love to talk.*
-
 </div>
