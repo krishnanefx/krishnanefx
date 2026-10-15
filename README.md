@@ -1,4 +1,12 @@
-I'm studying for an MEng in Robotics & AI at UCL, between London and Singapore. Most of what I build started as something I wanted for my own day: running code inside my lecture notes, reading faster on my phone, and robots for my courses.
+I'm studying for an MEng in Robotics & AI at UCL, between London and Singapore. Before UCL I did machine-learning research at A*STAR, which led to two co-authored papers; most of what I build now started as something I wanted for my own day: running code inside my lecture notes, reading faster on my phone, and robots for my courses.
+
+### Research
+
+- **[Accelerating natural product discovery with linked MS-genomics and language/transformer-based models](https://www.nature.com/articles/s44259-026-00206-7)** · *npj Antimicrobials and Resistance*, 2026 · co-author
+  I co-developed algorithms and analysed data for the framework, which prioritised producers of natural products with 75–100% precision across three case studies.
+- **[67 million natural product-like compound database generated via molecular language processing](https://www.nature.com/articles/s41597-023-02207-x)** · *Scientific Data*, 2023 · co-author
+  I processed and characterised the 100 million generated molecules (RDKit, ChEMBL curation, NP Score, NPClassifier), contributing to the 67,064,204-compound database, 165 times the known natural products.
+- Co-inventor, Singapore patent application 10202403057W (2024): *Multi-Modal Natural Product Discovery via MS-Genomics and Language Models*.
 
 ### Tahoe Run · run code inside Obsidian notes
 
