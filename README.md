@@ -17,7 +17,6 @@ Explore everything!
 |---|---|
 | **Tahoe for Obsidian** | [Theme](https://github.com/krishnanefx/obsidian-tahoe-theme) · [Run](https://github.com/krishnanefx/obsidian-tahoe-run) (run code blocks, Python notebook and debugger) · [Math](https://github.com/krishnanefx/obsidian-tahoe-math) (answers as you type) |
 | **Apps** | [Lector](https://github.com/krishnanefx/lector-support), a private reading coach for iPhone · [FlashRead](https://github.com/krishnanefx/reading-speed-trainer), an RSVP speed-reading trainer |
-| **Civic tech** | [OneMigrant](https://github.com/krishnanefx/onemigrant), a help bot for migrant workers in Singapore |
 | **UKSSC** | [Project Orchid](https://github.com/krishnanefx/project-orchid), the student platform · [Website](https://github.com/krishnanefx/ukssc-website) · [BlastOFF! 2026](https://github.com/krishnanefx/blastoff-2026) careers fair |
 | **AI and data** | [ClearFrame](https://github.com/krishnanefx/ClearFrame), news bias analysis · [News Scraper](https://github.com/krishnanefx/News-Scraper) · [Scholar Scraper](https://github.com/krishnanefx/Scholar_Scraper) |
 | **Robots** | [Don't Touch Me](https://github.com/krishnanefx/Dont_touch_me) · [Robotics Challenge](https://github.com/krishnanefx/Robotics_challenge) · [RAI Robot Comms](https://github.com/krishnanefx/rai-robot-comms) |
