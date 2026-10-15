@@ -9,7 +9,7 @@
 
 ### About
 
-Explore everything!
+tools for thinking, robots and tech for public good!
 
 #### Things to explore
 
