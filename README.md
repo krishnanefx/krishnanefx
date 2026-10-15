@@ -27,12 +27,3 @@ Explore everything!
 <div align="center">
   <img src="https://raw.githubusercontent.com/krishnanefx/krishnanefx/main/profile-3d-contrib/profile-gitblock-rainbow.svg" alt="3D contribution graph" />
 </div>
-
-#### Habits
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=krishnanefx&theme=dark&hide_border=true&background=0D1117&ring=4F8EF7&fire=4F8EF7&currStreakLabel=4F8EF7">
-    <img src="https://streak-stats.demolab.com?user=krishnanefx&theme=default&hide_border=true&ring=4F8EF7&fire=4F8EF7&currStreakLabel=4F8EF7" alt="GitHub contribution streak" />
-  </picture>
-</div>
