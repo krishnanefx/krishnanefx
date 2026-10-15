@@ -14,7 +14,7 @@ Part of a family I built for my own vault, all in the directory: [Tahoe Code](ht
 
 ### Lector · a speed reader that respects punctuation
 
-**Released** on the [App Store](https://apps.apple.com/us/app/lector-read-faster/id6807418777?ppid=ef511a4f-0ad6-4e6f-9b32-dc3e99dcce46) · free · iPhone, iOS 17+
+**Released** on the [App Store](https://apps.apple.com/us/app/lector-read-faster/id6807418777?ppid=ef511a4f-0ad6-4e6f-9b32-dc3e99dcce46) · free · iPhone, iOS 17+ · built and owned by me
 
 <a href="https://apps.apple.com/us/app/lector-read-faster/id6807418777?ppid=ef511a4f-0ad6-4e6f-9b32-dc3e99dcce46"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/9b/72/429b72fd-3fa4-ee01-2433-cba2cf46b7ab/01-punctuation.png/320x480bb.jpg" alt="Lector on iPhone" width="240" /></a>
 
