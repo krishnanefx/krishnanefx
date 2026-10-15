@@ -15,7 +15,7 @@ Explore everything!
 
 | | |
 |---|---|
-| **Tahoe for Obsidian** | [Theme](https://github.com/krishnanefx/obsidian-tahoe-theme) · [Run](https://github.com/krishnanefx/obsidian-tahoe-run) (run code blocks, Python notebook and debugger) · [Math](https://github.com/krishnanefx/obsidian-tahoe-math) (answers as you type) |
+| **Tahoe for Obsidian** | [Theme](https://community.obsidian.md/themes/tahoe) ([source](https://github.com/krishnanefx/obsidian-tahoe-theme)) · [Run](https://community.obsidian.md/plugins/tahoe-run), run code blocks with a Python notebook and debugger ([source](https://github.com/krishnanefx/obsidian-tahoe-run)) · [Math](https://community.obsidian.md/plugins/tahoe-math), answers as you type ([source](https://github.com/krishnanefx/obsidian-tahoe-math)) · [Code](https://community.obsidian.md/plugins/tahoe-code), an IDE in your code blocks ([source](https://github.com/krishnanefx/obsidian-tahoe-code)) |
 | **Apps** | [Lector](https://github.com/krishnanefx/lector-support), a private reading coach for iPhone · [FlashRead](https://github.com/krishnanefx/reading-speed-trainer), an RSVP speed-reading trainer |
 | **UKSSC** | [Project Orchid](https://github.com/krishnanefx/project-orchid), the student platform · [Website](https://github.com/krishnanefx/ukssc-website) · [BlastOFF! 2026](https://github.com/krishnanefx/blastoff-2026) careers fair |
 | **AI and data** | [News Scraper](https://github.com/krishnanefx/News-Scraper) · [Scholar Scraper](https://github.com/krishnanefx/Scholar_Scraper) |
