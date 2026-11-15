@@ -16,9 +16,9 @@ I'm studying for an MEng in Robotics & AI at UCL, between London and Singapore. 
 
 - **Problem:** I take my lecture notes in Obsidian, but kept switching to Jupyter or MATLAB to run the code that went with them.
 - **What I built:** Python blocks in a note share one live kernel, like a notebook, with breakpoints, stepping and a variables view. MATLAB runs in your own installation; C, C++, Swift and others run as one-off programs.
-- **Evidence:** [listed in the community directory](https://community.obsidian.md/plugins/tahoe-run), version 1.6.2. Tested on macOS. Python on iPhone and iPad is in beta and so far tested only in Obsidian's mobile mode on a Mac.
+- **Evidence:** [listed in the community directory](https://community.obsidian.md/plugins/tahoe-run), version 1.7.1. Tested on macOS. Python on iPhone and iPad is in beta and so far tested only in Obsidian's mobile mode on a Mac.
 
-Part of a family I built for my own vault, all in the directory: [Tahoe Code](https://community.obsidian.md/plugins/tahoe-code) (an IDE inside code blocks), [Math](https://community.obsidian.md/plugins/tahoe-math) (answers as you type), [Organize](https://community.obsidian.md/plugins/tahoe-organize), [Intelligence](https://community.obsidian.md/plugins/tahoe-intelligence) and the [Tahoe theme](https://community.obsidian.md/themes/tahoe).
+Part of a family I built for my own vault, all in the directory: [Tahoe Code](https://community.obsidian.md/plugins/tahoe-code) (an IDE inside code blocks), [Math](https://community.obsidian.md/plugins/tahoe-math) (answers as you type), [Organize](https://community.obsidian.md/plugins/tahoe-organize), [Intelligence](https://community.obsidian.md/plugins/tahoe-intelligence) and the [Tahoe theme](https://community.obsidian.md/themes/tahoe). How they're built: [write-ups on the Tahoe site](https://krishnanefx.github.io/tahoe/).
 
 ### Lector · a speed reader that respects punctuation
 
